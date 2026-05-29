@@ -1,5 +1,7 @@
 # Calcora
 
+[简体中文](README_zh.md)
+
 An Android scientific calculator and computer algebra system (CAS) powered by the [Giac/Xcas](https://www-fourier.ujf-grenoble.fr/~parisse/giac.html) engine.
 
 ## Features
@@ -48,4 +50,4 @@ Giac/Xcas is © Bernard Parisse and contributors, licensed under GPLv3. See `gia
 
 ---
 
-*by [libchara-dev](https://github.com/jsjsjsjsjsjsjson)* qwq
+*by [libchara-dev](https://github.com/jsjsjsjsjsjsjson)*
