@@ -13,7 +13,7 @@
 - **脚本编辑器** — 编写、保存、加载并运行 Xcas 脚本，支持语法高亮
 - **完整帮助系统** — 可搜索的离线函数参考，含描述、相关函数与示例
 - **智能补全** — 输入时自动提示函数名建议
-- **Monet 动态取色** — 配色跟随设备壁纸（Android 12+）
+- **Monet** — 配色跟随设备壁纸（Android 12+）
 - **国际化** — 中英文界面，Giac 后端语言支持
 
 ## 界面
@@ -50,4 +50,4 @@ Giac/Xcas © Bernard Parisse 及贡献者，基于 GPLv3 授权。详见 `giac-2
 
 ---
 
-*来自 [libchara-dev](https://github.com/jsjsjsjsjsjsjson)*
+*by [libchara-dev](https://github.com/jsjsjsjsjsjsjson)*
