@@ -617,7 +617,7 @@ private fun CalculatorKey(label: String, role: KeyRole, onClick: () -> Unit, mod
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun VarPanel(onInsert: (String) -> Unit) {
-    val vars = listOf("x", "y", "z", "a", "b", "c", "n", "t", "k", "m", ":=", ";", "(", ")", "[", "]", "{", "}", "->")
+    val vars = listOf("x", "y", "z", "a", "b", "c", "n", "t", "k", "m", "pi", "e", ":=", ";", "(", ")", "[", "]", "{", "}", "->")
     FlowRow(horizontalArrangement = Arrangement.spacedBy(5.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
         vars.forEach { v ->
             AssistChip(onClick = { onInsert(v) }, label = { Text(v, fontSize = 13.sp, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Medium) }, shape = RoundedCornerShape(12.dp))
