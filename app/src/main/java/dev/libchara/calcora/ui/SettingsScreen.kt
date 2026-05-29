@@ -109,7 +109,7 @@ fun SettingsScreen(
             Slider(value = settings.historyLimit.toFloat(), onValueChange = { onSettingsChange(settings.copy(historyLimit = it.roundToInt().coerceIn(20, 200))) }, valueRange = 20f..200f, steps = 17)
         }
 
-        SettingsCard(stringResource(R.string.settings_about), subtitle = "v0.1.2a") {
+        SettingsCard(stringResource(R.string.settings_about), subtitle = "v0.2.0") {
             Text(stringResource(R.string.about_text), color = MaterialTheme.colorScheme.onSurfaceVariant)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
                 Button(onClick = onResetSession, modifier = Modifier.weight(1f)) { Text(stringResource(R.string.settings_reset_session)) }
