@@ -617,7 +617,7 @@ private fun CalculatorKey(label: String, role: KeyRole, onClick: () -> Unit, mod
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun VarPanel(onInsert: (String) -> Unit) {
-    val vars = listOf("x", "y", "z", "a", "b", "c", "n", "t", "k", "m", ":=", ";", "(", ")")
+    val vars = listOf("x", "y", "z", "a", "b", "c", "n", "t", "k", "m", ":=", ";", "(", ")", "[", "]", "{", "}", "->")
     FlowRow(horizontalArrangement = Arrangement.spacedBy(5.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
         vars.forEach { v ->
             AssistChip(onClick = { onInsert(v) }, label = { Text(v, fontSize = 13.sp, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Medium) }, shape = RoundedCornerShape(12.dp))
@@ -650,7 +650,8 @@ private fun FunctionsPanel(onInsert: (String) -> Unit) {
         "diff(\u25A1,x)", "integrate(\u25A1,x)", "limit(\u25A1,x=0)", "sum(\u25A1,k,1,n)",
         "det(\u25A1)", "inv(\u25A1)", "transpose(\u25A1)", "rank(\u25A1)",
         "ifactor(\u25A1)", "gcd(\u25A1,\u25A1)", "lcm(\u25A1,\u25A1)",
-        "plot(\u25A1)", "plot3d(\u25A1)", "plotparam(\u25A1)", "plotlist(\u25A1)", "plotseq(\u25A1)", "plot(\u25A1,x=-5..5)"
+        "plot(\u25A1)", "plot3d(\u25A1)", "plotparam(\u25A1)", "plotlist(\u25A1)", "plotseq(\u25A1)", "plot(\u25A1,x=-5..5)",
+        "makelist(\u25A1)", "makemat(\u25A1)", "fft(\u25A1)", "ifft(\u25A1)"
     )
     FlowRow(horizontalArrangement = Arrangement.spacedBy(5.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
         chips.forEach { template ->
