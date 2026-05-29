@@ -40,12 +40,6 @@ cd Calcora
 
 The project bundles a subset of the [Giac 2.0.0](https://www-fourier.ujf-grenoble.fr/~parisse/giac.html) C++ source tree under `giac-2.0.0/` and builds it via CMake in `app/src/main/cpp/CMakeLists.txt`. Only `arm64-v8a` is targeted.
 
-## Tech stack
-
-- **UI**: Kotlin, Jetpack Compose, Material 3 (dynamic color)
-- **Engine**: Giac/Xcas 2.0.0 (C++ → JNI via CMake/NDK)
-- **Architecture**: single Activity, Compose navigation with animated transitions
-
 ## License
 
 This project's original code is licensed under the MIT License.
@@ -54,4 +48,4 @@ Giac/Xcas is © Bernard Parisse and contributors, licensed under GPLv3. See `gia
 
 ---
 
-*by [libchara-dev](https://github.com/libchara-dev)*
+*by [libchara-dev](https://github.com/jsjsjsjsjsjsjson)* qwq
